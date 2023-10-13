@@ -1,0 +1,47 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+.food {
+  border-radius: 15px;
+  box-shadow: 0px 1px 11px #00000026;
+  padding: 20px;
+}
+.food img {
+  width: 75%;
+}
+header {
+  text-align: center;
+}
+header img {
+  width: 200px;
+}
+button {
+  border: 0;
+  padding: 15px 20px;
+  background-color: #ff5e00;
+  border-radius: 15px;
+  color: white;
+}
+button:hover{
+    box-shadow: 0px 1px 20px #ff5e00;
+}
+
+/* Responsive  */
+/* For Smaller Devices : */
+@media screen and (max-width: 576px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* For Medium Devices : 576 - 992*/
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
